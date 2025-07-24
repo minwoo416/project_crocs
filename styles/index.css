@@ -1,10 +1,10 @@
 /* -------------------------------------------------------------------------------헤더-------------------- */
 header {width:100%; position:relative; padding-bottom:15px;}
-header .long_banner {width:100%; background:red; text-align:center; position:relative; align-items:center;}
-header .long_banner p {font-size:0.75rem; width:100%; line-height:25px;}
-header .long_banner button {position:absolute; top:0; right:0; width:25px; height:25px;}
-header .header_container {width:100%; max-width:1520px; background:blue; margin:0 auto;}
-header .header_container .header_top {display:flex; justify-content:space-between;}
+header .long_banner {width:100%; background:#000; text-align:center; position:relative; align-items:center;}
+header .long_banner p {font-size:0.75rem; width:100%; line-height:25px; color:#fff;}
+header .long_banner button {position:absolute; top:0; right:0; width:25px; height:25px; color:#fff;}
+header .header_container {width:100%; max-width:1520px; background:#fff; margin:0 auto;}
+header .header_container .header_top {display:flex; justify-content:space-between; align-items:center;}
 header .header_container .header_top h1 {}
 header .header_container .header_top h1 a {}
 /* PC화면에서는 없어지는 메뉴 --s */
@@ -59,6 +59,7 @@ header .header_container .header_bottom .gnb_menu_wrap > li > a {font-weight:500
 header .header_container .header_bottom .gnb_menu_wrap > li .depth2 {
     background:coral;
     margin-top:30px; display:flex;
+    display:none;
 }
 header .header_container .header_bottom .gnb_menu_wrap > li .depth2 > li {}
 header .header_container .header_bottom .gnb_menu_wrap > li .depth2 > li > a {}
@@ -78,4 +79,22 @@ header .header_container .header_bottom .search_wrap img {
     top:5; right:20px;
 }
 /* -------------------------------------------------------------------------------메인-------------------- */
+main {width:100%;}
+/* -----------------------------------1행-------------------------------- */
+main .main_banner_container {position:relative;}
+main .main_banner_container .banner_bg {width:100%;}
+main .main_banner_container .banner_bg img {width:100%; display:block;}
+main .main_banner_container .banner_text {
+    position:absolute;
+    left:100px; bottom:120px;
+}
+main .main_banner_container .banner_text p {
+    font-size:1.563rem; font-weight:700;
+    line-height:150%;
+    color:#fff;
+}
+main .main_banner_container .banner_text h1 {
+    font-size:6.25rem; font-weight:700;
+    color:#fff;
+}
 /* -------------------------------------------------------------------------------풋터-------------------- */

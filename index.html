@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>크록스 코리아 공식 홈페이지</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
@@ -214,7 +220,331 @@
             </div>
         </div>
     </header>
-    <main></main>
+    <main>
+        <!-- ------------------------1행 메인배너------------------------ -->
+        <div class="main_banner_container">
+            <div class="banner_bg">
+                <img src="./images/banner.jpg" alt="">
+            </div>
+            <div class="banner_text">
+                <p>혁신, 즐거움, 편안함, 단순함<br>그 어느 때보다 더 많은 스타일과 더 많은 용도.</p>
+                <h1>crocs</h1>
+            </div>
+        </div>
+        <!-- ------------------------2행 신상품------------------------ -->
+        <section class="new_container">
+            <div class="title_wrap">
+                <h2>신상품</h2>
+                <a href="#"><img src="" alt="더보기"></a>
+            </div>
+            <div class="new_wrap">
+                <div class="category">
+                    <button type="button" class="categoty_btn">크록스</button>
+                    <button type="button" class="categoty_btn">자비츠</button>
+                    <button type="button" class="categoty_btn">액세서리&백</button>
+                </div>
+                <!-- 크록스 스와이퍼 -->
+                <div class="swiper new_product_crocs">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new01.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">새터데이 마블 슬라이드 우먼</p>
+                                    <p class="price">￦49,900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new02.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 애니멀 클로그</p>
+                                    <p class="bofore_price"><del>￦74,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦49,900</p>
+                                        <p class="sale"><span>28%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new03.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 버터플라이 클로그 토들러</p>
+                                    <p class="bofore_price"><del>￦64,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦45,400</p>
+                                        <p class="sale"><span>30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new04.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip_wrap">
+                                        <div class="color_chip"></div>
+                                        <div class="color_chip"></div>
+                                    </div>
+                                    <p class="product_name">케이지드 클로그</p>
+                                    <p class="price">￦129,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new05.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 프로스티드 부케 클로그</p>
+                                    <p class="bofore_price"><del>￦79,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦63,900</p>
+                                        <p class="sale"><span>20%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new01.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">새터데이 마블 슬라이드 우먼</p>
+                                    <p class="price">￦49,900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new02.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 애니멀 클로그</p>
+                                    <p class="bofore_price"><del>￦74,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦49,900</p>
+                                        <p class="sale"><span>28%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new03.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 버터플라이 클로그 토들러</p>
+                                    <p class="bofore_price"><del>￦64,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦45,400</p>
+                                        <p class="sale"><span>30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new04.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip_wrap">
+                                        <div class="color_chip"></div>
+                                        <div class="color_chip"></div>
+                                    </div>
+                                    <p class="product_name">케이지드 클로그</p>
+                                    <p class="price">￦129,000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new05.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">클래식 프로스티드 부케 클로그</p>
+                                    <p class="bofore_price"><del>￦79,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦63,900</p>
+                                        <p class="sale"><span>20%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- 지비츠 스와이퍼 -->
+                <div class="swiper new_product_jibbitz">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz01.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 5개</p>
+                                    <p class="bofore_price"><del>￦19,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦13,900</p>
+                                        <p class="sale"><span>30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz02.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 밈 5개 세트</p>
+                                    <p class="bofore_price"><del>￦25,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦17,900</p>
+                                        <p class="sale"><span>31%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz03.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 더프 맥주</p>
+                                    <p class="bofore_price"><del>￦7,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>57%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz04.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 바트</p>
+                                    <p class="bofore_price"><del>￦5,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>40%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz01.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 퀵키마트</p>
+                                    <p class="bofore_price"><del>￦7,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>57%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz01.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 5개</p>
+                                    <p class="bofore_price"><del>￦19,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦13,900</p>
+                                        <p class="sale"><span>30%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz02.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 밈 5개 세트</p>
+                                    <p class="bofore_price"><del>￦25,900</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦17,900</p>
+                                        <p class="sale"><span>31%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz03.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 더프 맥주</p>
+                                    <p class="bofore_price"><del>￦7,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>57%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz04.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 바트</p>
+                                    <p class="bofore_price"><del>￦5,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>40%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/jibbitz01.png" alt="">
+                                <div class="new_content">
+                                    <p class="product_name">심슨 가족 퀵키마트</p>
+                                    <p class="bofore_price"><del>￦7,000</del></p>
+                                    <div class="price_wrap">
+                                        <p class="price">￦3,000</p>
+                                        <p class="sale"><span>57%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <!-- 악세서리 스와이퍼 -->
+                <div class="swiper new_product_acc">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="new_photo">
+                                <img src="./images/main_new01.jpg" alt="">
+                                <div class="new_content">
+                                    <div class="color_chip"></div>
+                                    <p class="product_name">새터데이 마블 슬라이드 우먼</p>
+                                    <p class="price">￦49,900</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------------3행 모바일광고------------------------ -->
+        <!-- ------------------------4행 특가세일------------------------ -->
+        <!-- ------------------------5행 작은 구매하기------------------------ -->
+        <!-- ------------------------6행 포켓몬------------------------ -->
+        <!-- ------------------------7행 트렌딩------------------------ -->
+        <!-- ------------------------8행 큰 구매하기------------------------ -->
+        <!-- ------------------------9행 브랜드 파트너십------------------------ -->
+        <!-- ------------------------10행 작은 광고------------------------ -->
+    </main>
     <footer></footer>
 </body>
 </html>
