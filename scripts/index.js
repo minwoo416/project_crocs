@@ -52,3 +52,12 @@ const saleWrap = new Swiper('.sale_container .sale_product',{
     slidesPerView:4,
     spaceBetween:30,
 })
+/* 트렌딩 스와이퍼 */
+const trendingWrap = new Swiper('.trending_container .trending_swiper',{
+    slidesPerView:6,
+    spaceBetween:20,
+    navigation: {
+        nextEl: ".trending_container .swiper-button-next",
+        prevEl: ".trending_container .swiper-button-prev",
+    },
+})
