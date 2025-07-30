@@ -80,7 +80,7 @@ header .header_container .header_bottom .search_wrap img {
 }
 /* -------------------------------------------------------------------------------메인-------------------- */
 main {width:100%;}
-/* -----------------------------------1행-------------------------------- */
+/* -----------------------------------1행 배너-------------------------------- */
 main .main_banner_container {position:relative;}
 main .main_banner_container .banner_bg {width:100%;}
 main .main_banner_container .banner_bg img {width:100%; display:block;}
@@ -97,7 +97,7 @@ main .main_banner_container .banner_text h1 {
     font-size:6.25rem; font-weight:700;
     color:#fff;
 }
-/* -----------------------------------2행-------------------------------- */
+/* -----------------------------------2행 신제품-------------------------------- */
 main .new_container {
     max-width:1370px; margin:100px auto;
     height:378px;
@@ -124,8 +124,8 @@ main .new_container .new_wrap .category button {
 main .new_container .new_wrap .swiper {}
 /* 스와이버 버튼 */
 main .new_container .new_wrap .swiper-scrollbar {
-    bottom:0; width:1120px;
-    left:205px;
+    bottom:0; max-width:1120px;
+    left:50%; transform:translateX(-50%);
 }
 /* 신제품 크록스 */
 main .new_container .new_wrap .swiper-button-prev {left:160px;}
@@ -134,9 +134,7 @@ main .new_container .new_wrap .swiper-button-prev img {display:block;}
 main .new_container .new_wrap .swiper-button-next {right:0;}
 main .new_container .new_wrap .swiper-button-next::after {display:none;}
 main .new_container .new_wrap .swiper-button-next img {}
-/* 신제품 지비츠 */
-/* 신제품 악세 */
-/* 스와이버 */
+/* 스와이퍼 */
 main .new_container .new_wrap .swiper .swiper-wrapper {
     width:1120px;
 }
@@ -156,8 +154,7 @@ main .new_container .new_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .
     width:14px; height:14px; border-radius:50px; display:block;
 }
 main .new_container .new_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .product_name {
-    font-size:0.938rem; font-weight:500; margin-bottom:10px;
-    display:block;
+    
 }
 main .new_container .new_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price {}
 main .new_container .new_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price del {font-size:0.75rem; color:#aaa;}
@@ -169,7 +166,7 @@ main .new_container .new_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .
 main .new_container .new_wrap .new_product_crocs {}
 main .new_container .new_wrap .new_product_jibbitz {display:none;}
 main .new_container .new_wrap .new_product_acc {display:none;}
-/* -----------------------------------3행-------------------------------- */
+/* -----------------------------------3행 모바일-------------------------------- */
 main .mobile_ad {position:relative;}
 main .mobile_ad .mobile_ad_bg {
     background:url(../images/crocs_app.jpg);
@@ -181,5 +178,54 @@ main .mobile_ad p {
     position:absolute; left:640px; bottom:44px;
 }
 main .mobile_ad p span{font-size:1.688rem; font-weight:700; line-height:250%;}
-
+/* -----------------------------------4행 특가세일-------------------------------- */
+main .sale_container {
+    max-width:1370px; height:594px; margin:100px auto;
+    position:relative;
+    background:yellow;
+}
+main .sale_container h2 {font-size:1.563rem; font-weight:500;}
+main .sale_container .category_wrap {
+    display:flex; justify-content:space-between; align-items:end;
+    margin:30px 0 20px;
+}
+main .sale_container .category_wrap .category {display:flex; gap:15px;}
+main .sale_container .category_wrap .category button {font-size:0.875rem; font-weight:500; color:#aaa;}
+main .sale_container .category_wrap a {}
+/* 스와이버 버튼 */
+main .sale_container .swiper-button-prev {}
+main .sale_container .swiper-button-prev::after {display:none;}
+main .sale_container .swiper-button-prev img {}
+main .sale_container .swiper-button-next::after {display:none;}
+main .sale_container .swiper-button-next img {}
+main .sale_container .swiper-scrollbar {
+    max-width:1290px;
+    left:50%; transform:translateX(-50%);
+}
+main .sale_container .swiper {
+    background:red; max-width:1290px; margin:0 auto; 
+}
+/* 스와이퍼 */
+main .sale_container .swiper .swiper-wrapper {
+    
+}
+main .sale_container .swiper .swiper-wrapper .swiper-slide {width:300px !important;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo {width:100%;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a {}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a img {}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content {}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .color_chip {margin-bottom:10px;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .color_chip span {
+    width:14px; height:14px; border-radius:50px; display:block;
+}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .product_name {
+    font-size:0.938rem; font-weight:500; margin-bottom:10px;
+    display:block;
+}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .bofore_price {}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .bofore_price del {font-size:0.75rem; color:#aaa;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .price_wrap {display:flex; gap:10px; margin-top:7px;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .price {font-size:0.875rem; font-weight:500;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .sale {}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .sale span {font-size:0.875rem; font-weight:700; color:#D70000;}
 /* -------------------------------------------------------------------------------풋터-------------------- */
