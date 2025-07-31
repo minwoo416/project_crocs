@@ -1,3 +1,46 @@
+/* 1행 배너 변수 */
+const headerBanner = document.querySelector('header .long_banner');
+const headerBannerBtn = document.querySelector('header .long_banner button');
+const headerGnb = document.querySelectorAll('header .header_bottom .gnb_menu_wrap > .depth1');
+/* 2행 신제품 변수 */
+const newSwiper = document.querySelectorAll('.new_container .new_product_wrap .swiper');
+const newCateBtn = document.querySelectorAll('.new_container .category button');
+/* 2행 카테고리 클릭시 변경되기 */
+/* 초기 크록스 카테 보이기 */
+newCateBtn.forEach((obj,index)=>{
+    obj.addEventListener('click',()=>{
+        newCateBtn.forEach((btn)=>{
+            btn.classList.remove('active')
+        })
+        newSwiper.forEach((product,idx)=>{
+            if(idx == index){
+                newSwiper.forEach((e)=>{
+                    e.style.display = 'none';
+                })
+                product.style.display = 'flex';
+            }
+        })
+        obj.classList.add('active');
+    })
+})
+
+
+/* 배너 닫기버튼 */
+headerBannerBtn.addEventListener('click',()=>{
+    headerBanner.style.display = 'none';
+})
+headerGnb.forEach((obj)=>{
+    const depth2 = obj.querySelector('.depth2');
+    obj.addEventListener('mouseover',()=>{
+        depth2.style.display = 'flex';
+        obj.style.borderBottom = '1px solid #000';
+    })
+    obj.addEventListener('mouseout',()=>{
+        depth2.style.display = 'none';
+        obj.style.borderBottom = 'none';
+    })
+})
+/* -----------스와이퍼 모음----------- */
 /* 신제품 스와이퍼 */
 const newCrocs = new Swiper('.new_container .new_product_crocs',{
     navigation: {
@@ -5,11 +48,11 @@ const newCrocs = new Swiper('.new_container .new_product_crocs',{
         prevEl: ".new_container .swiper-button-prev",
     },
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".new_container .swiper-scrollbar",
         hide: true,
         hide: false,
     },
-    slidesPerView:"5",
+    slidesPerView:5,
     spaceBetween:30,
 })
 const newJibbitz = new Swiper('.new_container .new_product_jibbitz',{
@@ -18,7 +61,7 @@ const newJibbitz = new Swiper('.new_container .new_product_jibbitz',{
         prevEl: ".new_container .swiper-button-prev",
     },
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".new_container .swiper-scrollbar",
         hide: true,
         hide: false,
     },
@@ -31,7 +74,7 @@ const newAcc = new Swiper('.new_container .new_product_acc',{
         prevEl: ".new_container .swiper-button-prev",
     },
     scrollbar: {
-        el: ".swiper-scrollbar",
+        el: ".new_container .swiper-scrollbar",
         hide: true,
         hide: false,
     },
