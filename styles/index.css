@@ -167,55 +167,52 @@ main .new_container .new_wrap .category button.active::after {
     top:13px;
     z-index:0;
 }
-main .new_container .new_wrap .new_product_wrap {
-    position:relative;
-    width:100%; max-width:1210px;
-}
-main .new_container .new_wrap .new_product_wrap .swiper {max-width:1120px; min-width:320px;}
+main .new_container .new_wrap .new_all_wrap {position:relative; width:100%; max-width:1210px;}
+main .new_container .new_wrap .new_all_wrap .swiper {max-width:1120px; min-width:320px;}
 /* 스와이버 버튼 */
-main .new_container .new_wrap .new_product_wrap .swiper-scrollbar {
+main .new_container .new_wrap .new_all_wrap .swiper-scrollbar {
     bottom:0; max-width:1120px;
     left:50%; transform:translateX(-50%);
 }
 /* 신제품 크록스 */
-main .new_container .new_wrap .new_product_wrap .swiper-button-prev {left:0;}
-main .new_container .new_wrap .new_product_wrap .swiper-button-prev::after {display:none;}
-main .new_container .new_wrap .new_product_wrap .swiper-button-prev img {display:block;}
-main .new_container .new_wrap .new_product_wrap .swiper-button-next {right:0;}
-main .new_container .new_wrap .new_product_wrap .swiper-button-next::after {display:none;}
-main .new_container .new_wrap .new_product_wrap .swiper-button-next img {}
+main .new_container .new_wrap .new_all_wrap .swiper-button-prev {left:0;}
+main .new_container .new_wrap .new_all_wrap .swiper-button-prev::after {display:none;}
+main .new_container .new_wrap .new_all_wrap .swiper-button-prev img {display:block;}
+main .new_container .new_wrap .new_all_wrap .swiper-button-next {right:0;}
+main .new_container .new_wrap .new_all_wrap .swiper-button-next::after {display:none;}
+main .new_container .new_wrap .new_all_wrap .swiper-button-next img {}
 /* 스와이퍼 */
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper {
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper {
     width:100%;
 }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide {max-width:200px;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo {width:100%;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a {width:100%; display:block;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a img {display:block; width:100%;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content {
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide {max-width:200px;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo {width:100%;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a {width:100%; display:block;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a img {display:block; width:100%;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content {
     height:120px;
     padding:10px; margin-top:20px;
 }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip_wrap {
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip_wrap {
     display:flex; flex-flow:row nowrap; gap:5px;
 }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip {margin-bottom:10px; }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip span {
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip {margin-bottom:10px; }
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .color_chip span {
     width:14px; height:14px; border-radius:50px; display:block;
 }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .product_name {
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .product_name {
     
 }
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price {}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price del {font-size:0.75rem; color:#aaa;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .price_wrap {display:flex; gap:10px; margin-top:7px;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .sale {}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .sale span {font-size:0.875rem; font-weight:700; color:#D70000;}
-main .new_container .new_wrap .new_product_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .price {font-size:0.875rem; font-weight:500;}
-/* 개별 스와이퍼 */
-main .new_container .new_wrap .new_product_crocs {}
-main .new_container .new_wrap .new_product_jibbitz {display:none;}
-main .new_container .new_wrap .new_product_acc {display:none;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price {}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .bofore_price del {font-size:0.75rem; color:#aaa;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .price_wrap {display:flex; gap:10px; margin-top:7px;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .sale {}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swxiper-slide .new_photo .new_content .sale span {font-size:0.875rem; font-weight:700; color:#D70000;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content .price {font-size:0.875rem; font-weight:500;}
+/* 개별 스와이퍼 */ 
+main .new_container .new_wrap .new_crocs_wrap {}
+main .new_container .new_wrap .new_jibbitz_wrap {display:none;}
+main .new_container .new_wrap .new_acc_wrap {display:none;}
 /* -----------------------------------3행 모바일-------------------------------- */
 main .mobile_ad {position:relative;}
 main .mobile_ad .mobile_ad_bg {
