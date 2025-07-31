@@ -50,8 +50,6 @@ const saleWrap = new Swiper('.sale_container .sale_product',{
         hide: true,
         hide: false,
     },
-    slidesPerView:4,
-    spaceBetween:30,
 })
 /* 트렌딩 스와이퍼 */
 const trendingWrap = new Swiper('.trending_container .trending_swiper',{
@@ -71,6 +69,25 @@ const headerGnb = document.querySelectorAll('header .header_bottom .gnb_menu_wra
 const newSwiper = document.querySelectorAll('.new_container .new_all_wrap');
 const newCateBtn = document.querySelectorAll('.new_container .category button');
 const swiperInstances = [newCrocs, newJibbitz, newAcc];
+/* 4행 특가세일 변수 */
+const saleCate = document.querySelectorAll('.sale_container .category button');
+
+/* 4행 카테고리클릯 ㅣ이동, 좌우로 드래그시 카테고리 변경 */
+function update(index){
+    saleCate.forEach((obj,idx)=>{
+        obj.classList.toggle('active', idx === index);
+    })
+}
+saleWrap.on('slideChange',()=>{
+    update(saleWrap.activeIndex);
+})
+saleCate.forEach((btn,idx)=>{
+    btn.addEventListener('click',()=>{
+        saleWrap.slideTo(idx);
+        update(saleWrap.activeIndex)
+    })
+})
+
 /* 2행 카테고리 클릭시 변경되기 */
 /* 초기 크록스 카테 보이기 */
 newCateBtn.forEach((obj,index)=>{
