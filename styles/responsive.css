@@ -1,3 +1,9 @@
 /* responsive.css */
 /* desktop 1250~1920 */
 /* Tablet 1249~850 */
+/* Mobile 849~320 */
+@media screen and (max-width:1249px){
+    /* -------------------헤더------------------------ */
+    header .header_container .header_top .search {display:block;}
+    header .header_container .header_top .more_menu {display:block;}
+}

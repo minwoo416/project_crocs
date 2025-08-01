@@ -7,7 +7,6 @@ const newCrocs = new Swiper('.new_container .new_product_crocs',{
     },
     scrollbar: {
         el: ".new_container .new_crocs_wrap .swiper-scrollbar",
-        hide: true,
         hide: false,
     },
     slidesPerView:5,
@@ -60,7 +59,11 @@ const trendingWrap = new Swiper('.trending_container .trending_swiper',{
         prevEl: ".trending_container .swiper-button-prev",
     },
 })
-
+/* 헤더 변수 */
+const tabletMenu = document.querySelector('header .header_container .header_top .more_menu');
+const tabletMenuHidden = document.querySelector('header .header_container .header_top .hidden_menu_tablet');
+const tableMenuLi = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li');
+console.log(tabletMenu,tabletMenuHidden,tableMenuLi)
 /* 1행 배너 변수 */
 const headerBanner = document.querySelector('header .long_banner');
 const headerBannerBtn = document.querySelector('header .long_banner button');
