@@ -69,8 +69,13 @@ const headerGnb = document.querySelectorAll('header .header_bottom .gnb_menu_wra
 const newSwiper = document.querySelectorAll('.new_container .new_all_wrap');
 const newCateBtn = document.querySelectorAll('.new_container .category button');
 const swiperInstances = [newCrocs, newJibbitz, newAcc];
+const newChangeCrocs = document.querySelectorAll('.new_container .new_all_wrap .new_product_crocs .new_photo > a img');
+const newChangeAcc = document.querySelectorAll('.new_container .new_all_wrap .new_product_acc .new_photo > a img');
 /* 4행 특가세일 변수 */
 const saleCate = document.querySelectorAll('.sale_container .category button');
+const saleChange = document.querySelectorAll('.sale_container .sale_product .swiper-slide .sale_photo > a img');
+console.log(saleChange)
+
 
 /* 4행 카테고리클릯 ㅣ이동, 좌우로 드래그시 카테고리 변경 */
 function update(index){
@@ -87,6 +92,18 @@ saleCate.forEach((btn,idx)=>{
         update(saleWrap.activeIndex)
     })
 })
+/* 4행 이미지에 마우스 올릴때 이미지 변경 */
+for(let i = 0; i < saleChange.length; i++){
+    let img = saleChange[i];
+    let orignal = img.src;
+    img.addEventListener('mouseover',()=>{
+        img.src = orignal.replace('main_sale_clog','main_sale_clog_on');
+    })
+    img.addEventListener('mouseout',()=>{
+        img.src = orignal;
+    })
+}
+
 
 /* 2행 카테고리 클릭시 변경되기 */
 /* 초기 크록스 카테 보이기 */
@@ -108,6 +125,27 @@ newCateBtn.forEach((obj,index)=>{
         obj.classList.add('active');
     })
 })
+/* 2행 이미지에 마우스 올릴때 이미지 변경 */
+for(let i = 0; i < newChangeCrocs.length; i++){
+    let img = newChangeCrocs[i];
+    let orignal = img.src;
+    img.addEventListener('mouseover',()=>{
+        img.src = orignal.replace('main_new','main_new_on')
+    })
+    img.addEventListener('mouseout',()=>{
+        img.src = orignal;
+    })
+}
+for(let i = 0; i < newChangeAcc.length; i++){
+    let img = newChangeAcc[i];
+    let orignal = img.src;
+    img.addEventListener('mouseover',()=>{
+        img.src = orignal.replace('main_acc','main_acc_on')
+    })
+    img.addEventListener('mouseout',()=>{
+        img.src = orignal;
+    })
+}
 
 
 /* 배너 닫기버튼 */
