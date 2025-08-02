@@ -21,6 +21,7 @@ header .header_container .header_top .menu_wrap a img {}
 header .header_container .header_top .menu_wrap a img:hover {}
 /* 숨어있는 메뉴(테블릿 모습 시 등장) */
 header .header_container .header_top .menu_wrap .hidden_menu_tablet {
+    display:none;
     position:absolute; top:0; left:0; 
     width:100%;
     background:rgba(255,255,255);
@@ -33,13 +34,16 @@ header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul {
     margin:0 auto;
 }
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul {}
-header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li {}
+header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li {width:60%;}
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li > a {font-weight:500;}
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 {
-    display:flex; flex-flow:row wrap; margin-top:30px;
+    display:flex; flex-flow:row wrap; margin-top:30px; gap:50px;
     display:none;
 }
-header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 .depth_list {height:max-content;}
+header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 .depth_list {
+    height:max-content;
+    display:flex; flex-flow:column nowrap; gap:20px;
+}
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 > li {}
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 > li > a {font-size:0.875rem; font-weight:500;}
 header .header_container .header_top .menu_wrap .hidden_menu_tablet > ul > li  .depth2 > li  > .depth3 {
@@ -215,8 +219,8 @@ main .new_container .new_wrap .new_all_wrap .swiper-button-next img {}
 main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper {
     width:100%;
 }
-main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide {max-width:200px;}
-main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo {width:100%;}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide {}
+main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo {max-width:200px;}
 main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a {width:100%; display:block;}
 main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo > a img {display:block; width:100%;}
 main .new_container .new_wrap .new_all_wrap .swiper .swiper-wrapper .swiper-slide .new_photo .new_content {

@@ -6,4 +6,18 @@
     /* -------------------헤더------------------------ */
     header .header_container .header_top .search {display:block;}
     header .header_container .header_top .more_menu {display:block;}
+    /* -------------------1행 배너------------------------ */
+    main .main_banner_container .banner_text {bottom:100px;}
+    main .main_banner_container .banner_text h1 {font-size:4.375rem; font-weight:700;}
+    main .main_banner_container .banner_text p {font-size:1.25rem; font-weight:700;}
+    /* -------------------2행 신제품------------------------ */
+    main .new_container {
+        max-width:947px;
+    }
+    main .new_container .new_wrap .new_all_wrap {
+        max-width:763px;
+    }
+    main .new_container .new_wrap .new_all_wrap .swiper {
+        max-width:673px;
+    }
 }

@@ -9,9 +9,17 @@ const newCrocs = new Swiper('.new_container .new_product_crocs',{
         el: ".new_container .new_crocs_wrap .swiper-scrollbar",
         hide: false,
     },
-    slidesPerView:5,
+    slidesPerView:3,
     spaceBetween:30,
+    breakpoints:{
+        1249:{
+            slidesPerView:5,
+        },
+    }
 })
+window.addEventListener('resize', () => {
+    if(newCrocs) newCrocs.update();
+});
 const newJibbitz = new Swiper('.new_container .new_product_jibbitz',{
     navigation: {
         nextEl: ".new_container .new_jibbitz_wrap .swiper-button-next",
@@ -22,9 +30,17 @@ const newJibbitz = new Swiper('.new_container .new_product_jibbitz',{
         hide: true,
         hide: false,
     },
-    slidesPerView:5,
+    slidesPerView:3,
     spaceBetween:30,
+    breakpoints:{
+        1249:{
+            slidesPerView:5,
+        },
+    }
 })
+window.addEventListener('resize', () => {
+    if(newJibbitz) newJibbitz.update();
+});
 const newAcc = new Swiper('.new_container .new_product_acc',{
     navigation: {
         nextEl: ".new_container .new_acc_wrap .swiper-button-next",
@@ -35,9 +51,17 @@ const newAcc = new Swiper('.new_container .new_product_acc',{
         hide: true,
         hide: false,
     },
-    slidesPerView:5,
+    slidesPerView:3,
     spaceBetween:30,
+    breakpoints:{
+        1249:{
+            slidesPerView:5,
+        },
+    }
 })
+window.addEventListener('resize', () => {
+    if(newAcc) newAcc.update();
+});
 /* 특가세일 스와이퍼 */
 const saleWrap = new Swiper('.sale_container .sale_product',{
     navigation: {
@@ -62,8 +86,10 @@ const trendingWrap = new Swiper('.trending_container .trending_swiper',{
 /* 헤더 변수 */
 const tabletMenu = document.querySelector('header .header_container .header_top .more_menu');
 const tabletMenuHidden = document.querySelector('header .header_container .header_top .hidden_menu_tablet');
-const tableMenuLi = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li');
-console.log(tabletMenu,tabletMenuHidden,tableMenuLi)
+const tabletMenuLi = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li');
+const tabletDepth2 = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li .depth2');
+const tabletMenuBtn = document.querySelector('header .header_container .header_top .hidden_menu_tablet > button');
+console.log(tabletMenu,tabletMenuHidden,tabletMenuLi,tabletMenuBtn,tabletDepth2)
 /* 1행 배너 변수 */
 const headerBanner = document.querySelector('header .long_banner');
 const headerBannerBtn = document.querySelector('header .long_banner button');
@@ -149,8 +175,6 @@ for(let i = 0; i < newChangeAcc.length; i++){
         img.src = orignal;
     })
 }
-
-
 /* 배너 닫기버튼 */
 headerBannerBtn.addEventListener('click',()=>{
     headerBanner.style.display = 'none';
@@ -164,5 +188,26 @@ headerGnb.forEach((obj)=>{
     obj.addEventListener('mouseout',()=>{
         depth2.style.display = 'none';
         obj.style.borderBottom = 'none';
+    })
+})
+/* 헤더 태블릿 */
+tabletMenu.addEventListener('click',()=>{
+    tabletMenuHidden.style.display = 'flex';
+})
+tabletMenuBtn.addEventListener('click',()=>{
+    tabletMenuHidden.style.display = 'none';
+})
+tabletMenuLi.forEach((li,index)=>{
+    li.addEventListener('mouseover',()=>{
+        tabletDepth2.forEach((depth2,idx)=>{
+            if(idx === index){
+                depth2.style.display = 'flex';
+            }
+        })
+    })
+    li.addEventListener('mouseout',()=>{
+        tabletDepth2.forEach((depth2,idx)=>{
+            depth2.style.display = 'none';
+        })
     })
 })
