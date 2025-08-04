@@ -76,15 +76,26 @@ const saleWrap = new Swiper('.sale_container .sale_product',{
 })
 /* 트렌딩 스와이퍼 */
 const trendingWrap = new Swiper('.trending_container .trending_swiper',{
-    slidesPerView:6,
-    spaceBetween:20,
     navigation: {
         nextEl: ".trending_container .swiper-button-next",
         prevEl: ".trending_container .swiper-button-prev",
     },
+    slidesPerView:3,
+    spaceBetween:20,
+    breakpoints:{
+        850:{
+            slidesPerView:4,
+        },
+        1250:{
+            slidesPerView:6,
+        },
+    }
 })
 /* 헤더 변수 */
 const tabletMenu = document.querySelector('header .header_container .header_top .more_menu');
+const mobileMenu = document.querySelector('header .header_container .header_top .more_menu2');
+const mobileMenuHidden = document.querySelector('header .header_container .header_top .hidden_menu');
+const mobileBtn = document.querySelector('header .header_container .header_top .hidden_menu .menu_close_btn')
 const tabletMenuHidden = document.querySelector('header .header_container .header_top .hidden_menu_tablet');
 const tabletMenuLi = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li');
 const tabletDepth2 = document.querySelectorAll('header .header_container .header_top .hidden_menu_tablet > ul > li .depth2');
@@ -190,6 +201,19 @@ headerGnb.forEach((obj)=>{
         obj.style.borderBottom = 'none';
     })
 })
+/* 헤더 모바일 */
+mobileMenu.addEventListener('click',()=>{
+    mobileMenuHidden.style.display = 'flex';
+    mobileBtn.addEventListener('click',()=>{
+        mobileMenuHidden.style.display = 'none';
+    })
+window.addEventListener('resize',()=>{
+    const windowWidth = window.innerWidth;
+    if(windowWidth > 849){
+        mobileMenuHidden.style.display = 'none';
+    }
+})
+})
 /* 헤더 태블릿 */
 tabletMenu.addEventListener('click',()=>{
     tabletMenuHidden.style.display = 'flex';
@@ -210,4 +234,10 @@ tabletMenuLi.forEach((li,index)=>{
             depth2.style.display = 'none';
         })
     })
+})
+window.addEventListener('resize',()=>{
+    const windowWidth = window.innerWidth;
+    if(windowWidth > 1249){
+        tabletMenuHidden.style.display = 'none';
+    }
 })

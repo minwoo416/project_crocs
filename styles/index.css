@@ -13,6 +13,7 @@ header .header_container .header_top .cart {}
 header .header_container .header_top .wishlist {}
 header .header_container .header_top .login {}
 header .header_container .header_top .more_menu {display:none;}
+header .header_container .header_top .more_menu2 {display:none;}
 /* PC화면에서는 없어지는 메뉴 --e */
 header .header_container .header_top h1 a img {width:100%;}
 header .header_container .header_top .menu_wrap {display:flex; gap:15px;}
@@ -146,15 +147,15 @@ main .main_banner_container .banner_text h1 {
 }
 /* 모바일일때 등장하는 2행 */
 main .mobile_crocs_ad_container {
-    max-width:1370px; margin:50px auto 0;
+    max-width:749px; margin:50px auto 0;
     display:flex; flex-flow:row nowrap;
-    gap:40px;
+    gap:30px;
     text-align:center;
     display:none;
 }
 main .mobile_crocs_ad_container .crocs_ad {}
-main .mobile_crocs_ad_container .crocs_ad a {}
-main .mobile_crocs_ad_container .crocs_ad a img {width:100%;}
+main .mobile_crocs_ad_container .crocs_ad a {display:block;}
+main .mobile_crocs_ad_container .crocs_ad a img {width:100%; display:block;}
 main .mobile_crocs_ad_container .crocs_ad span {font-weight:500; margin-top:20px; display:block;}
 /* -----------------------------------2행 신제품-------------------------------- */
 main .new_container {
@@ -309,8 +310,8 @@ main .sale_container .swiper {
 main .sale_container .swiper .swiper-wrapper {}
 main .sale_container .swiper .swiper-wrapper .swiper-slide {display:flex; gap:30px;}
 main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo {width:300px;}
-main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a {}
-main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a img {width:100%;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a {display:block;}
+main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo > a img {width:100%; display:block;}
 main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content {}
 main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .color_chip {margin-bottom:10px; display:flex; gap:5px;}
 main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo .sale_content .color_chip img {display:block;}
@@ -337,7 +338,7 @@ main .small_ad_container .small_ad .small_ad_content {position:absolute; left:20
 main .small_ad_container .small_ad .small_ad_content .small_ad_name {font-size:1.25rem; font-weight:700; color:#fff;}
 main .small_ad_container .small_ad .small_ad_content .small_ad_description {color:#fff; margin:5px 0 20px;}
 main .small_ad_container .small_ad .small_ad_content a {
-    font-size:0.875rem;
+    font-size:0.875rem; font-weight:500;
     padding:5px 20px; 
     background:#F2F0FF;
     border-radius:15px;
@@ -361,9 +362,9 @@ main .pokemon_container {
 main .pokemon_container .pokemon_left {width:950px; position:relative;}
 main .pokemon_container .pokemon_left:hover .pokemon_bg {filter: brightness(90%); transition:all 1s;}
 main .pokemon_container .pokemon_left .pokemon_bg {background:url(../images/poket.jpg) no-repeat; width:100%; height:650px;}
-main .pokemon_container .pokemon_left .pokemon_content {position:absolute; left:50px; bottom:50px;}
-main .pokemon_container .pokemon_left .pokemon_content .pokemon_name {font-size:2.5rem; font-weight:700; margin-bottom:10px; color:#fff;}
-main .pokemon_container .pokemon_left .pokemon_content .pokemon_description {font-size:1.25rem; color:#fff;}
+main .pokemon_container .pokemon_left .pokemon_content {position:absolute; left:50px; bottom:50px; }
+main .pokemon_container .pokemon_left .pokemon_content .pokemon_name {font-size:2.5rem; font-weight:700; margin-bottom:10px; color:#fff; display:block;}
+main .pokemon_container .pokemon_left .pokemon_content .pokemon_description {font-size:1.25rem; color:#fff; display:block;}
 main .pokemon_container .pokemon_right {max-width:655px; margin-left:40px;}
 main .pokemon_container .pokemon_right .pokemon_title {
     display:flex; justify-content:space-between; align-items:end;
@@ -427,8 +428,7 @@ main .big_ad_container {
 }
 /* 공통 */
 main .big_ad_container .big_ad {width:100%; position:relative;}
-main .big_ad_container .big_ad .big_ad_bg {
-    height:930px;}
+main .big_ad_container .big_ad .big_ad_bg {height:930px;}
 main .big_ad_container .big_ad .big_ad_content {
     position:absolute; left:60px; bottom:60px;
 }
@@ -438,6 +438,7 @@ main .big_ad_container .big_ad .big_ad_content a {
     font-weight:500;
     padding:5px 20px; background:#F2F0FF;
     border-radius:15px;
+    display:inline-block;
 }
 main .big_ad_container .big_ad .big_ad_content a:hover {
     background:#000; color:#f2f0ff;
@@ -469,8 +470,8 @@ main .crocs_ad_container {
     text-align:center;
 }
 main .crocs_ad_container .crocs_ad {}
-main .crocs_ad_container .crocs_ad a {}
-main .crocs_ad_container .crocs_ad a img {width:100%; transition:all 1s;}
+main .crocs_ad_container .crocs_ad a {max-width:430px;}
+main .crocs_ad_container .crocs_ad a img {width:100%; transition:all 1s; display:block;}
 main .crocs_ad_container .crocs_ad a img:hover {transform:scale(105%);}
 main .crocs_ad_container .crocs_ad span {font-weight:500; margin-top:20px; display:block;}
 /* -----------------------------------풋터-------------------------------- */
