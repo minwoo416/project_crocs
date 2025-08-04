@@ -20,4 +20,9 @@
     main .new_container .new_wrap .new_all_wrap .swiper {
         max-width:673px;
     }
+    /* -------------------4행 특가세일------------------------ */
+    main .sale_container {
+        max-width:947px;
+    }
+    main .sale_container .swiper .swiper-wrapper .swiper-slide .sale_photo:last-of-type {display:none;}
 }
