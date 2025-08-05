@@ -4,7 +4,8 @@
 /* Mobile 849~320 */
 @media screen and (max-width:1249px){
     /* -------------------헤더------------------------ */
-    header .header_container {max-width:1049px;}
+    
+    header .header_container {max-width:1049px; margin:0 auto;}
     header .header_container .header_top .search {display:block;}
     header .header_container .header_top .more_menu {display:block;}
     header .header_container .header_bottom {display:none;}
@@ -55,16 +56,17 @@
     main .crocs_ad_container {max-width:949px;}
     main .crocs_ad_container .crocs_ad a {}
     /* -------------------풋터------------------------ */
-    footer .footer_container {max-width:949px;}
+    footer .footer_container {max-width:949px; padding:0 150px;}
     footer .footer_container .footer_bottom .footer_bottom_right {display:none;} 
 }
 
 @media screen and (max-width:849px){
     main {padding-bottom:100px;}
+    .mobile_crocs_ad_container, .new_container, .sale_container, .small_ad_container, .trending_container {padding:0 20px;}
     /* -------------------헤더------------------------ */
     header .header_container {max-width:649px;}
     header .header_container .header_top .more_menu {display:none;}
-    header .header_container .header_top .more_menu2 {display:flex;}
+    header .header_container .header_top .more_menu2 {display:block;}
     /* -------------------1행 배너------------------------ */
     main .main_banner_container .banner_text {bottom:70px;}
     main .main_banner_container .banner_text h1 {font-size:3.125rem;}
@@ -97,7 +99,8 @@
     main .pokemon_container {display:none;}
     /* -------------------7행 트렌딩------------------------ */
     main .trending_container {max-width:749px; margin:50px auto 0;}
-    main .trending_container .trending_wrap .trending_swiper {max-width:640px; background:red;} 
+    main .trending_container h2 {font-size:1.25rem;}
+    main .trending_container .trending_wrap .trending_swiper {max-width:640px;} 
     /* -------------------8행 큰 구매하기------------------------ */
     main .big_ad_container {display:none;}
     /* -------------------9행 브랜드------------------------ */
@@ -105,5 +108,9 @@
     /* -------------------10행 작은광고------------------------ */
     main .crocs_ad_container {display:none;}
     /* -------------------풋터------------------------ */
-    footer .footer_container {max-width:749px;}
+    footer .footer_container {max-width:749px; padding:0 50px;}
+}
+
+@media screen and (max-width:500px){
+    main .main_banner_container .banner_text {display:none;}
 }
