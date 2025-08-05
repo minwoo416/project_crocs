@@ -113,4 +113,9 @@
 
 @media screen and (max-width:500px){
     main .main_banner_container .banner_text {display:none;}
+    footer .footer_container {padding:0 20px;}
+    footer .footer_container .footer_top .sns_wrap {display:none;}
+    footer .footer_container .footer_bottom .footer_bottom_left .fnb > li {font-size:0.875rem;}
+    footer .footer_container .footer_bottom .footer_bottom_left .fnb > li .depth1 li {font-size:0.625rem;}
+    
 }

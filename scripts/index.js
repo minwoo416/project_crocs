@@ -115,8 +115,6 @@ const newChangeAcc = document.querySelectorAll('.new_container .new_all_wrap .ne
 const saleCate = document.querySelectorAll('.sale_container .category button');
 const saleChange = document.querySelectorAll('.sale_container .sale_product .swiper-slide .sale_photo > a img');
 console.log(saleChange)
-
-
 /* 4행 카테고리클릯 ㅣ이동, 좌우로 드래그시 카테고리 변경 */
 function update(index){
     saleCate.forEach((obj,idx)=>{

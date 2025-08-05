@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 | 크록스 코리아 공식 홈페이지</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <script src="./scripts/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="long_banner">
+            <p>6월 24일 오후 8시 라이브 커머스 COMING SOON</p>
+            <button type="button">x</button>
+        </div>
+        <div class="header_container">
+            <div class="header_top">
+                <h1><a href="./index.html"><img src="./images/logo.png" alt="크록스"></a></h1>
+                <div class="menu_wrap">
+                    <a href="#" class="search"><img src="./images/search.png" alt="검색하기"></a>
+                    <a href="#" class="cart"><img src="./images/cart.png" alt="장바구니"></a>
+                    <a href="#" class="wishlist"><img src="./images/wishlist.png" alt="위시리스트"></a>
+                    <a href="./login.html" class="login"><img src="./images/my.png" alt="나의 메뉴"></a>
+                    <a href="#" class="more_menu"><img src="./images/menu.png" alt="메뉴더보기"></a>
+                    <a href="#" class="more_menu2"><img src="./images/menu.png" alt="메뉴더보기"></a>
+                    <div class="hidden_menu_tablet"><!-- 태블릿에서 등장 -->
+                        <ul>
+                            <li>
+                                <a href="#">여성</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="">슈즈 종류</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클로그</a></li>
+                                            <li><a href="">플랫/스니커즈/로퍼/메리제인</a></li>
+                                            <li><a href="">샌들/웨지</a></li>
+                                            <li><a href="">플립/슬라이드</a></li>
+                                            <li><a href="">지비츠™ 참</a></li>
+                                            <li><a href="">털안감 라인드 클로그</a></li>
+                                            <li><a href="">양말</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">여성 컬렉션</a>
+                                        <ul class="depth3">
+                                            <li><a href="">NEW 클래식 컬렉션</a></li>
+                                            <li><a href="">NEW 소호 컬렉션</a></li>
+                                            <li><a href="">하이츠 컬렉션</a></li>
+                                            <li><a href="">스타일 샌들</a></li>
+                                            <li><a href="">온라인 한정</a></li>
+                                            <li><a href=""><span>여성용 슈즈 모두 보기</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">남성</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="">슈즈 종류</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클로그</a></li>
+                                            <li><a href="">슬립온/스니커즈</a></li>
+                                            <li><a href="">샌들</a></li>
+                                            <li><a href="">플립/슬라이드</a></li>
+                                            <li><a href="">지비츠™ 참</a></li>
+                                            <li><a href="">양말</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">남성 컬렉션</a>
+                                        <ul class="depth3">
+                                            <li><a href="">NEW 에코 컬렉션</a></li>
+                                            <li><a href="">인모션 컬렉션</a></li>
+                                            <li><a href="">스니커즈</a></li>
+                                            <li><a href="">듀엣 맥스</a></li>
+                                            <li><a href="">온라인 한정</a></li>
+                                            <li><a href=""><span>남성용 슈즈 모두 보기</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">키즈</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="">토들러(165mm 이하)</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클로그</a></li>
+                                            <li><a href="">부츠/레인부츠</a></li>
+                                            <li><a href="">샌들/플랫</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">키즈(175mm 이상)</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클로그</a></li>
+                                            <li><a href="">부츠/레인부츠</a></li>
+                                            <li><a href="">샌들/플랫</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">키즈 컬렉션</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클래식 아이템</a></li>
+                                            <li><a href="">클래식</a></li>
+                                            <li><a href="">캐릭터샵</a></li>
+                                            <li><a href="">온라인 한정</a></li>
+                                            <li><a href=""><span>키즈 슈즈 모두 보기</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">지비츠™ 참</a>
+                                <ul class="depth2">
+                                    <li><a href="">모든 지비츠™ 참</a></li>
+                                    <li><a href="">싱글 지비츠™ 참</a></li>
+                                    <li><a href="">팩 지비츠™ 참</a></li>
+                                    <li><a href="">신상품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">BAGS</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="">BAGS</a>
+                                        <ul class="depth3">
+                                            <li><a href="">BAGS 모두보기</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">BAGS 종류</a>
+                                        <ul class="depth3">
+                                            <li><a href="">크록스 백 & 벨트 백</a></li>
+                                            <li><a href="">백팩</a></li>
+                                            <li><a href="">도트백</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">BAGS 꾸미기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">세일</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <ul class="depth_list">
+                                            <li><a href="">여성</a></li>
+                                            <li><a href="">남성</a></li>
+                                            <li><a href="">키즈</a></li>
+                                            <li><a href="">지비츠™ 참</a></li>
+                                            <li><a href="">세일 모두보기</a></li>
+                                        </ul>
+                                        <ul class="depth3">
+                                            <li><a href="">1만 원 이하</a></li>
+                                            <li><a href="">1만 원 대</a></li>
+                                            <li><a href="">2만 원 대</a></li>
+                                            <li><a href="">3만 원 대</a></li>
+                                            <li><a href="">4만 원 이상</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">키즈(175mm 이상)</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클로그</a></li>
+                                            <li><a href="">부츠/레인부츠</a></li>
+                                            <li><a href="">샌들/플랫</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="">키즈 컬렉션</a>
+                                        <ul class="depth3">
+                                            <li><a href="">클래식 아이템</a></li>
+                                            <li><a href="">클래식</a></li>
+                                            <li><a href="">캐릭터샵</a></li>
+                                            <li><a href="">온라인 한정</a></li>
+                                            <li><a href=""><span>키즈 슈즈 모두 보기</span></a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">WORK슈즈</a>
+                                <ul class="depth2">
+                                    <li>
+                                        <a href="">워크슈즈</a>
+                                        <ul class="depth3">
+                                            <li><a href="">워크슈즈 모두보기</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <button type="button">x</button>
+                    </div>
+                    <div class="hidden_menu"><!-- 모바일에서 등장 -->
+                        <ul class="hidden_list">
+                            <li><button type="button" class="menu_close_btn">X</button></li>
+                            <li><a href="#">샌들 특가</a></li>
+                            <li><a href="#">신상품</a></li>
+                            <li><a href="#">여성</a></li>
+                            <li><a href="#">남성</a></li>
+                            <li><a href="#">키즈</a></li>
+                            <li> <a href="#">지비츠™ 참</a></li>
+                            <li><a href="#">BAGS</a></li>
+                            <li><a href="#">시즌오프</a></li>
+                            <li><a href="#">워크슈즈</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <ul class="gnb_menu_wrap">
+                    <li><a href="#">샌들 특가</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li class="depth1">
+                        <a href="#">여성</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="">슈즈 종류</a>
+                                <ul class="depth3">
+                                    <li><a href="">클로그</a></li>
+                                    <li><a href="">플랫/스니커즈/로퍼/메리제인</a></li>
+                                    <li><a href="">샌들/웨지</a></li>
+                                    <li><a href="">플립/슬라이드</a></li>
+                                    <li><a href="">지비츠™ 참</a></li>
+                                    <li><a href="">털안감 라인드 클로그</a></li>
+                                    <li><a href="">양말</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">여성 컬렉션</a>
+                                <ul class="depth3">
+                                    <li><a href="">NEW 클래식 컬렉션</a></li>
+                                    <li><a href="">NEW 소호 컬렉션</a></li>
+                                    <li><a href="">하이츠 컬렉션</a></li>
+                                    <li><a href="">스타일 샌들</a></li>
+                                    <li><a href="">온라인 한정</a></li>
+                                    <li><a href=""><span>여성용 슈즈 모두 보기</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">남성</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="">슈즈 종류</a>
+                                <ul class="depth3">
+                                    <li><a href="">클로그</a></li>
+                                    <li><a href="">슬립온/스니커즈</a></li>
+                                    <li><a href="">샌들</a></li>
+                                    <li><a href="">플립/슬라이드</a></li>
+                                    <li><a href="">지비츠™ 참</a></li>
+                                    <li><a href="">양말</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">남성 컬렉션</a>
+                                <ul class="depth3">
+                                    <li><a href="">NEW 에코 컬렉션</a></li>
+                                    <li><a href="">인모션 컬렉션</a></li>
+                                    <li><a href="">스니커즈</a></li>
+                                    <li><a href="">듀엣 맥스</a></li>
+                                    <li><a href="">온라인 한정</a></li>
+                                    <li><a href=""><span>남성용 슈즈 모두 보기</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">키즈</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="">토들러(165mm 이하)</a>
+                                <ul class="depth3">
+                                    <li><a href="">클로그</a></li>
+                                    <li><a href="">부츠/레인부츠</a></li>
+                                    <li><a href="">샌들/플랫</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">키즈(175mm 이상)</a>
+                                <ul class="depth3">
+                                    <li><a href="">클로그</a></li>
+                                    <li><a href="">부츠/레인부츠</a></li>
+                                    <li><a href="">샌들/플랫</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">키즈 컬렉션</a>
+                                <ul class="depth3">
+                                    <li><a href="">클래식 아이템</a></li>
+                                    <li><a href="">클래식</a></li>
+                                    <li><a href="">캐릭터샵</a></li>
+                                    <li><a href="">온라인 한정</a></li>
+                                    <li><a href=""><span>키즈 슈즈 모두 보기</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">지비츠™ 참</a>
+                        <ul class="depth2">
+                            <li><a href="">모든 지비츠™ 참</a></li>
+                            <li><a href="">싱글 지비츠™ 참</a></li>
+                            <li><a href="">팩 지비츠™ 참</a></li>
+                            <li><a href="">신상품</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">BAGS</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="">BAGS</a>
+                                <ul class="depth3">
+                                    <li><a href="">BAGS 모두보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">BAGS 종류</a>
+                                <ul class="depth3">
+                                    <li><a href="">크록스 백 & 벨트 백</a></li>
+                                    <li><a href="">백팩</a></li>
+                                    <li><a href="">도트백</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">BAGS 꾸미기</a></li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">세일</a>
+                        <ul class="depth2">
+                            <li>
+                                <ul class="depth_list">
+                                    <li><a href="">여성</a></li>
+                                    <li><a href="">남성</a></li>
+                                    <li><a href="">키즈</a></li>
+                                    <li><a href="">지비츠™ 참</a></li>
+                                    <li><a href="">세일 모두보기</a></li>
+                                </ul>
+                                <ul class="depth3">
+                                    <li><a href="">1만 원 이하</a></li>
+                                    <li><a href="">1만 원 대</a></li>
+                                    <li><a href="">2만 원 대</a></li>
+                                    <li><a href="">3만 원 대</a></li>
+                                    <li><a href="">4만 원 이상</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">키즈(175mm 이상)</a>
+                                <ul class="depth3">
+                                    <li><a href="">클로그</a></li>
+                                    <li><a href="">부츠/레인부츠</a></li>
+                                    <li><a href="">샌들/플랫</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">키즈 컬렉션</a>
+                                <ul class="depth3">
+                                    <li><a href="">클래식 아이템</a></li>
+                                    <li><a href="">클래식</a></li>
+                                    <li><a href="">캐릭터샵</a></li>
+                                    <li><a href="">온라인 한정</a></li>
+                                    <li><a href=""><span>키즈 슈즈 모두 보기</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="depth1">
+                        <a href="#">WORK슈즈</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="">워크슈즈</a>
+                                <ul class="depth3">
+                                    <li><a href="">워크슈즈 모두보기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="search_wrap">
+                    <input type="text" placeholder="포켓몬 지비츠 7개 구매시 2개 무료 증정!"><img src="./images/search.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="login_container">
+            <div class="login_wrap">
+                <h2>로그인</h2>
+                <p class="join">계정이 없다면?<a href="#">회원가입하기</a>
+                <div class="login_content">
+                    <div class="login_input_message_wrap">
+                    <div class="login_input">
+                        <input type="text" class="id" placeholder="아이디를 입력해주세요.">
+                        <input type="password" class="pw" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <p class="error"><!--오류메시지 출력--></p>
+                    </div>
+                    <p class="auto_login"><img src="./images/login_off.png" alt="">아이디 저장</p>
+                    <div class="login_btn_wrap">
+                        <button type="button" class="login_btn">로그인</button>
+                    </div>
+                    <div class="id_pw_search">
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                    </div>
+                </div>
+            </div>
+            <div class="easy_login_wrap">
+                <h2>간편 로그인</h2>
+                <div class="easy_login_content">
+                    <div class="easy_login">
+                        <div class="easy">
+                            <a href="#"><img src="./images/gogle_login.png" alt=""></a>
+                            <span>구글로 로그인하기</span>
+                        </div>
+                        <div class="easy">
+                            <a href="#"><img src="images/facebook_login.png" alt=""></a>
+                            <span>페이스북으로 로그인하기</span>
+                        </div>
+                        <div class="easy">
+                            <a href="#"><img src="./images/kakao_login.png" alt=""></a>
+                            <span>카카오로 로그인하기</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="footer_top">
+                <p class="store_search"><a href="#">매장찾기</a></p>
+                <p class="korea"><a href="#"><img src="./images/korea.png" alt="한국"> 한국</a></p>
+                <div class="sns_wrap">
+                    <a href="#"><img src="./images/footer_youture.png" alt="유튜브"></a>
+                    <a href="#"><img src="./images/footer_facebook.png" alt="페이스북"></a>
+                    <a href="#"><img src="./images/footer_instar.png" alt="인스타그램"></a>
+                    <a href="#"><img src="./images/footer_kakao.png" alt="카카오톡"></a>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <ul class="fnb">
+                        <li>
+                            회사
+                            <ul class="depth1">
+                                <li><a href="#">회사 소개</a></li>
+                                <li><a href="#">지속 가능성</a></li>
+                                <li><a href="#">지구</a></li>
+                                <li><a href="#">사람</a></li>
+                                <li><a href="#">커뮤니티</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            고객센터
+                            <ul class="depth1">
+                                <li><a href="#">자주 묻는 질문들</a></li>
+                                <li><a href="#">주문조회</a></li>
+                                <li><a href="#">출고 및 배송</a></li>
+                                <li><a href="#">교환</a></li>
+                                <li><a href="#">반품</a></li>
+                                <li><a href="#">취소</a></li>
+                                <li><a href="#">크록스 사이즈 변환표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            고객센터 운영 시간
+                            <ul class="depth1">
+                                <li>
+                                    <p><span>월 - 금</span></p>
+                                    <p>오전 10시 - 오후 5시</p>
+                                </li>
+                                <li>
+                                    <p><span>점심시간</span></p>
+                                    <p>오후 12시 - 1시</p>
+                                </li>
+                                <li><a href="#">빠른이메일고객상담</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_bottom_right">
+                    <ul class="footer_info">
+                        <li><a href="#">개인 정보 보호 설정</a></li>
+                        <li><a href="#"><span>개인정보처리방침</span></a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li>크록스코리아 주식회사 서울시 강남구 테헤란로 410 (대치동 889-13) 금강타워 6층 / 대표: 양승준</li>
+                    </ul>
+                    <div class="num">
+                        <p>사업자등록번호: 106-86-52611/ 통신판매업신고번호: 제2008-서울강남-1684호(사업자정보확인) / 양승준</p>
+                        <p>고객상담실 : 1661-0677</p>
+                    </div>
+                    <div class="kcp">
+                        <p>KCP 구매안전 서비스(채무지급보증)</p>
+                        <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 KCP 구매안전서비스 (지급보증서)를 이용하실 수 있습니다.</p>
+                    </div>
+                    <p class="site_map"><a href="#">사이트맵</a></p>
+                    <p class="copy">&copy; 2025 Crocs Retail, LLC</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
