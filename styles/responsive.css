@@ -4,6 +4,7 @@
 /* Mobile 849~320 */
 @media screen and (max-width:1249px){
     /* -------------------헤더------------------------ */
+    header .header_container {max-width:1049px;}
     header .header_container .header_top .search {display:block;}
     header .header_container .header_top .more_menu {display:block;}
     header .header_container .header_bottom {display:none;}
@@ -13,7 +14,7 @@
     main .main_banner_container .banner_text p {font-size:1.25rem; font-weight:700;}
     /* -------------------2행 신제품------------------------ */
     main .new_container {
-        max-width:949px;
+        max-width:949px; 
     }
     main .new_container .new_wrap .new_all_wrap {
         max-width:763px;
@@ -59,7 +60,9 @@
 }
 
 @media screen and (max-width:849px){
+    main {padding-bottom:100px;}
     /* -------------------헤더------------------------ */
+    header .header_container {max-width:649px;}
     header .header_container .header_top .more_menu {display:none;}
     header .header_container .header_top .more_menu2 {display:flex;}
     /* -------------------1행 배너------------------------ */
@@ -68,18 +71,39 @@
     main .main_banner_container .banner_text p {font-size:1rem;}
     /* -------------------모바일일때 등장하는 2행------------------------ */
     main .mobile_crocs_ad_container {display:flex;}
-    main .mobile_crocs_ad_container .crocs_ad a {width:230px;}
+    main .mobile_crocs_ad_container .crocs_ad a {max-width:230px;}
     /* -------------------2행 신제품------------------------ */
-    main .new_container {
-        max-width:749px;
-    }
+    main .new_container {max-width:749px;}
     main .new_container .title_wrap h2 {font-size:1.25rem;}
-    main .new_container .new_wrap {flex-flow:column nowrap; align-items:start;}
+    main .new_container .new_wrap {flex-flow:column nowrap; align-items:start; margin-top:30px;}
     main .new_container .new_wrap .category {flex-direction:row; width:max-content; margin-bottom:20px;}
     main .new_container .new_wrap .category button {font-size:0.875rem;}
     main .new_container .new_wrap .category button.active {font-size:1rem;}
     /* -------------------3행 모바일앱------------------------ */
     main .mobile_ad {display:none;}
     /* -------------------4행 특가------------------------ */
-    main .sale_container {max-width:749px;}
+    main .sale_container {max-width:749px; height:430px;}
+    main .sale_container h2 {font-size:1.25rem;}
+    main .sale_container .category_wrap .category button {font-size:0.875rem;}
+    main .sale_container .category_wrap .category button.active {font-size:1rem;}
+    /* -------------------5행 작은 구매하기------------------------ */
+    main .small_ad_container {max-width:749px;}
+    main .small_ad_container .small_ad .small_ad_bg {background-size:cover;}
+    main .small_ad_container .small_ad .small_ad_content {left:10px; bottom:10px;}
+    main .small_ad_container .small_ad .small_ad_content .small_ad_name {font-size:1rem;}
+    main .small_ad_container .small_ad .small_ad_content .small_ad_description {font-size:0.75rem;}
+    main .small_ad_container .small_ad .small_ad_content a {font-size:0.625rem;}
+    /* -------------------6행 포켓몬------------------------ */
+    main .pokemon_container {display:none;}
+    /* -------------------7행 트렌딩------------------------ */
+    main .trending_container {max-width:749px; margin:50px auto 0;}
+    main .trending_container .trending_wrap .trending_swiper {max-width:640px; background:red;} 
+    /* -------------------8행 큰 구매하기------------------------ */
+    main .big_ad_container {display:none;}
+    /* -------------------9행 브랜드------------------------ */
+    main .brand_container {display:none;}
+    /* -------------------10행 작은광고------------------------ */
+    main .crocs_ad_container {display:none;}
+    /* -------------------풋터------------------------ */
+    footer .footer_container {max-width:749px;}
 }

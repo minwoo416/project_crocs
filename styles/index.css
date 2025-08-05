@@ -410,12 +410,12 @@ main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper
 main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper-slide:hover .trending_name {
     height:40px;
 }
-main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper-slide .trending_photo {width:200px; display:block;}
+main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper-slide .trending_photo {max-width:200px; display:block;}
 main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper-slide .trending_photo img {display:block; width:100%;}
 main .trending_container .trending_wrap .trending_swiper .swiper-wrapper .swiper-slide .trending_name {
     position:absolute; bottom:0; left:0; 
     display:block; 
-    width:200px; background:rgba(255,255,255,0.7);
+    width:100%; background:rgba(255,255,255,0.7);
     padding:5px 0; 
     font-size:0.875rem;
     height:25px;
