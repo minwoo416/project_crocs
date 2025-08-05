@@ -58,6 +58,8 @@
     /* -------------------풋터------------------------ */
     footer .footer_container {max-width:949px; padding:0 150px;}
     footer .footer_container .footer_bottom .footer_bottom_right {display:none;} 
+    /* 서브페이지 로그인 */
+    main .login_container {margin:80px auto;}
 }
 
 @media screen and (max-width:849px){
@@ -109,6 +111,14 @@
     main .crocs_ad_container {display:none;}
     /* -------------------풋터------------------------ */
     footer .footer_container {max-width:749px; padding:0 50px;}
+    /* -------------------------------------서브페이지------------------------------------------------- */
+    main .login_container {padding:0 20px;}
+    main .login_container .login_wrap h2 {font-size:1.25rem;}
+    main .login_container .login_wrap .join {font-size:0.875rem;}
+    main .login_container .login_wrap .join a {font-size:1rem;}
+    main .login_container .login_wrap .login_content .login_btn_wrap button {font-size:1rem;}
+    main .login_container .login_wrap .login_content .id_pw_search a {font-size:0.875rem;}
+    main .login_container .easy_login_wrap h2 {font-size:1.25rem;}
 }
 
 @media screen and (max-width:500px){
@@ -117,5 +127,4 @@
     footer .footer_container .footer_top .sns_wrap {display:none;}
     footer .footer_container .footer_bottom .footer_bottom_left .fnb > li {font-size:0.875rem;}
     footer .footer_container .footer_bottom .footer_bottom_left .fnb > li .depth1 li {font-size:0.625rem;}
-    
 }
