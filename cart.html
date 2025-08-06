@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로그인 | 크록스 코리아 공식 홈페이지</title>
+    <title>장바구니 | 크록스 코리아 공식 홈페이지</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/cart.css">
     <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="icon" href="./images/favicon.png" type="image/png">
-    <script src="./scripts/login.js" defer></script>
+    <script src="./scripts/cart.js" defer></script>
 </head>
 <body>
     <header>
@@ -390,48 +390,72 @@
         </div>
     </header>
     <main>
-        <div class="login_container">
-            <div class="login_wrap">
-                <h2>로그인</h2>
-                <p class="join">계정이 없다면?<a href="#">회원가입하기</a>
-                <div class="login_content">
-                    <div class="login_input_message_wrap">
-                    <div class="login_input">
-                        <input type="text" class="id" placeholder="아이디를 입력해주세요.">
-                        <input type="password" class="pw" placeholder="비밀번호를 입력해주세요.">
-                    </div>
-                    <p class="error"><!--오류메시지 출력--></p>
-                    </div>
-                    <p class="auto_login"><img src="./images/login_off.png" alt="">아이디 저장</p>
-                    <div class="login_btn_wrap">
-                        <button type="button" class="login_btn">로그인</button>
-                    </div>
-                    <div class="id_pw_search">
-                        <a href="#">아이디 찾기</a>
-                        <a href="#">비밀번호 찾기</a>
+        <section class="cart_container">
+            <h2>장바구니</h2>
+            <div class="cart_all_container">
+                <div class="cart_list_container">
+                    <div class="cart_list_wrap">
+                        <a href="#"><img src="./images/main_new01.png" alt=""></a>
+                        <div class="cart_list_content">
+                            <div class="cart_product_name_wrap">
+                                <a href="#" class="product_name">새터데이 마블 슬라이드 우먼</a>
+                                <img src="./images/delete.png" alt="" class="delete_btn">
+                            </div>
+                            <div class="cart_color_wrap">
+                                <p>색상 : 
+                                    <img src="./images/color_black.png" alt="블랙">
+                                    <button type="button"><img src="./images/more.png" alt=""></button>
+                                </p>
+                                <!-- 클릭 시 나오는 색상 리스트 -->
+                                <div class="cart_color_list">
+                                    <button type="button"><img src="./images/color_black.png" alt="블랙" title="블랙"></button>
+                                </div>
+                            </div>
+                            <div class="cart_size_wrap">
+                                <p>크기 : </p>
+                                <select>
+                                    <option>220</option>
+                                    <option>230</option>
+                                    <option>240</option>
+                                    <option>250</option>
+                                    <option>260</option>
+                                    <option>270</option>
+                                    <option>280</option>
+                                </select>
+                            </div>
+                            <div class="cart_num_price_wrap">
+                                <div class="cart_num">
+                                    <button type="button" class="minus">-</button>
+                                    <input type="number" value="1">
+                                    <button type="button" class="plus">+</button>
+                                </div>
+                                <p class="price">￦49,900</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="easy_login_wrap">
-                <h2>간편 로그인</h2>
-                <div class="easy_login_content">
-                    <div class="easy_login">
-                        <div class="easy">
-                            <a href="#"><img src="./images/gogle_login.png" alt=""></a>
-                            <span>구글로 로그인하기</span>
-                        </div>
-                        <div class="easy">
-                            <a href="#"><img src="images/facebook_login.png" alt=""></a>
-                            <span>페이스북으로 로그인하기</span>
-                        </div>
-                        <div class="easy">
-                            <a href="#"><img src="./images/kakao_login.png" alt=""></a>
-                            <span>카카오로 로그인하기</span>
-                        </div>
+                <div class="cart_order_container">
+                    <div class="order_wrap">
+                        <h3>주문내역</h3>
+                        <dl class="cart_order_wrap">
+                            <dt>배송비</dt>
+                            <dd><span>무료</span></dd>
+                            <dt>할인</dt>
+                            <dd class="sale">0</dd>
+                            <dt></dt>
+                            <dd>
+                                <input type="text" class="copon_code" placeholder="혜택코드를 입력하세요.">
+                                <button type="button" class="copon_btn">적용</button>
+                                <p class="copon_error">코드가 올바르지 않습니다.</p>
+                            </dd>
+                            <dt class="order_all_price">주문 총액</dt>
+                            <dd class="all_price">￦49,900</dd>
+                        </dl>
                     </div>
+                    <button type="button" class="order_btn">주문하기</button>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer_container">

@@ -60,6 +60,9 @@
     footer .footer_container .footer_bottom .footer_bottom_right {display:none;} 
     /* 서브페이지 로그인 */
     main .login_container {margin:80px auto;}
+    /* 서브페이지 장바구니 */
+    main .cart_container {max-width:949px; }
+    main .cart_container .cart_all_container .cart_list_container { max-width:560px;}
 }
 
 @media screen and (max-width:849px){
@@ -88,6 +91,7 @@
     /* -------------------4행 특가------------------------ */
     main .sale_container {max-width:749px; height:430px;}
     main .sale_container h2 {font-size:1.25rem;}
+    main .sale_container .category_wrap .category {flex-flow:row wrap;}
     main .sale_container .category_wrap .category button {font-size:0.875rem;}
     main .sale_container .category_wrap .category button.active {font-size:1rem;}
     /* -------------------5행 작은 구매하기------------------------ */
@@ -119,6 +123,20 @@
     main .login_container .login_wrap .login_content .login_btn_wrap button {font-size:1rem;}
     main .login_container .login_wrap .login_content .id_pw_search a {font-size:0.875rem;}
     main .login_container .easy_login_wrap h2 {font-size:1.25rem;}
+    /* 서브페이지 장바구니 */
+    main .cart_container {max-width:749px; }
+    main .cart_container .cart_all_container .cart_list_container .cart_list_wrap {
+        flex-direction:column;
+        height:max-content; padding:20px;
+    }
+    main .cart_container .cart_all_container .cart_list_container { max-width:340px;}
+}
+@media screen and (max-width:650px){
+    main .cart_container {text-align:center; max-width:600px;}
+    main .cart_container .cart_all_container {
+        flex-direction: column; align-items:center; gap:20px;
+    }
+    main .cart_container .cart_all_container .cart_order_container {max-width:340px;}
 }
 
 @media screen and (max-width:500px){
