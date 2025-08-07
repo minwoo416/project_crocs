@@ -69,7 +69,7 @@
     main {padding-bottom:100px;}
     .mobile_crocs_ad_container, .new_container, .sale_container, .small_ad_container, .trending_container {padding:0 20px;}
     /* -------------------헤더------------------------ */
-    header .header_container {max-width:649px;}
+    header .header_container {max-width:649px; padding:0 30px;}
     header .header_container .header_top .more_menu {display:none;}
     header .header_container .header_top .more_menu2 {display:block;}
     /* -------------------1행 배너------------------------ */
@@ -145,4 +145,9 @@
     footer .footer_container .footer_top .sns_wrap {display:none;}
     footer .footer_container .footer_bottom .footer_bottom_left .fnb > li {font-size:0.875rem;}
     footer .footer_container .footer_bottom .footer_bottom_left .fnb > li .depth1 li {font-size:0.625rem;}
+}
+@media screen and (max-width:360px){
+    header .header_container {padding:0 10px;}
+    main .cart_container .cart_all_container .cart_list_container,
+    main .cart_container .cart_all_container .cart_order_container {width:250px;}
 }
